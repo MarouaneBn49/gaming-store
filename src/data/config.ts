@@ -3,11 +3,11 @@ export const SITE_CONFIG = {
   name: "Gamer Store Maroc",
   description:
     "Votre destination gaming au Maroc — PC portables gamer Razer, ROG, Legion, MSI, TUF. Livraison gratuite partout au Maroc.",
-  whatsappNumber: "212600000000", // À remplacer par le vrai numéro
+  whatsappNumber: "212694613907",
   instagram: "@gamer_store_maroc",
   instagramUrl: "https://instagram.com/gamer_store_maroc",
   address: "Boulevard Mohammed V, Tanger, Maroc",
-  phone: "+212 6 00 00 00 00",
+  phone: "+212 6 94 61 39 07",
   hours: "Lun - Sam : 10h00 - 21h00 | Dim : Fermé",
 };
 
