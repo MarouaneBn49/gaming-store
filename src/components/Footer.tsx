@@ -1,6 +1,7 @@
 "use client";
 
 import { Instagram, MessageCircle, Phone, MapPin, Clock } from "lucide-react";
+import Image from "next/image";
 import { SITE_CONFIG, getWhatsAppLink } from "@/data/config";
 
 export default function Footer() {
@@ -12,12 +13,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Colonne 1 : Branding */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-neon-purple to-neon-cyan flex items-center justify-center font-title text-lg font-bold">
-                GS
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="relative w-9 h-9 md:w-10 md:h-10 rounded-lg overflow-hidden bg-white flex items-center justify-center shrink-0">
+                <Image
+                  src="/logo.jpg"
+                  alt="Gamer store"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
-              <span className="font-title text-lg font-bold tracking-wider">
-                GAMER <span className="text-gradient">STORE</span>
+              <span className="font-title text-base md:text-lg font-bold tracking-wider">
+                GAMER <span className="text-gradient">store</span>
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
@@ -29,7 +36,7 @@ export default function Footer() {
                 href={SITE_CONFIG.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-neon-purple/50 transition-all"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-primary/50 transition-all"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
@@ -62,7 +69,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-gray-400 text-sm hover:text-neon-purple transition-colors"
+                    className="text-gray-400 text-sm hover:text-primary transition-colors"
                   >
                     {link.label}
                   </a>
@@ -78,11 +85,11 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-gray-400 text-sm">
-                <MapPin size={16} className="text-neon-cyan mt-0.5 shrink-0" />
+                <MapPin size={16} className="text-primary mt-0.5 shrink-0" />
                 <span>{SITE_CONFIG.address}</span>
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
-                <Phone size={16} className="text-neon-purple mt-0.5 shrink-0" />
+                <Phone size={16} className="text-primary mt-0.5 shrink-0" />
                 <a
                   href={`tel:${SITE_CONFIG.phone.replace(/\s/g, "")}`}
                   className="hover:text-white transition-colors"
@@ -91,7 +98,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
-                <Clock size={16} className="text-neon-cyan mt-0.5 shrink-0" />
+                <Clock size={16} className="text-primary mt-0.5 shrink-0" />
                 <span>{SITE_CONFIG.hours}</span>
               </li>
             </ul>

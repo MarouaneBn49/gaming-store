@@ -1,6 +1,6 @@
 /* Configuration globale du site */
 export const SITE_CONFIG = {
-  name: "Gamer Store Maroc",
+  name: "Gamer store",
   description:
     "Votre destination gaming au Maroc — PC portables gamer Razer, ROG, Legion, MSI, TUF. Livraison gratuite partout au Maroc.",
   whatsappNumber: "212694613907",
@@ -16,10 +16,10 @@ export function getWhatsAppLink(productName?: string): string {
   const base = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=`;
   const message = productName
     ? encodeURIComponent(
-        `Bonjour Gamer Store Maroc ! 👋\n\nJe suis intéressé par le ${productName}. Est-il disponible ? Merci !`
+        `Bonjour Gamer store ! 👋\n\nJe suis intéressé par le ${productName}. Est-il disponible ? Merci !`
       )
     : encodeURIComponent(
-        `Bonjour Gamer Store Maroc ! 👋\n\nJe voudrais avoir plus d'informations sur vos produits. Merci !`
+        `Bonjour Gamer store ! 👋\n\nJe voudrais avoir plus d'informations sur vos produits. Merci !`
       );
   return base + message;
 }

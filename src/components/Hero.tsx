@@ -31,9 +31,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-flex items-center gap-2 bg-neon-purple/10 border border-neon-purple/30 rounded-full px-4 py-1.5 mb-6"
+          className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-1.5 mb-6"
         >
-          <span className="w-2 h-2 rounded-full bg-neon-cyan animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-primary-light animate-pulse" />
           <span className="text-xs md:text-sm text-gray-300 font-medium">
             Livraison gratuite partout au Maroc
           </span>
@@ -87,7 +87,7 @@ export default function Hero() {
           {/* Bouton secondaire */}
           <a
             href="#produits"
-            className="flex items-center gap-2 border border-white/20 hover:border-neon-purple/50 text-gray-300 hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/5"
+            className="flex items-center gap-2 border border-white/20 hover:border-primary/50 text-gray-300 hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/5"
           >
             Voir les produits
           </a>

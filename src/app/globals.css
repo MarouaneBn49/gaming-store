@@ -17,24 +17,25 @@
   }
 
   ::selection {
-    @apply bg-neon-purple/30 text-white;
+    @apply bg-primary/30 text-white;
   }
 }
 
 @layer utilities {
-  /* Glow néon violet */
-  .glow-purple {
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.4),
-      0 0 30px rgba(139, 92, 246, 0.2);
+  /* Glow rouge (couleur principale du logo) */
+  .glow-primary {
+    box-shadow: 0 0 15px rgba(230, 57, 70, 0.4),
+      0 0 30px rgba(230, 57, 70, 0.2);
   }
-  /* Glow néon cyan */
-  .glow-cyan {
-    box-shadow: 0 0 15px rgba(0, 229, 255, 0.4), 0 0 30px rgba(0, 229, 255, 0.2);
+  /* Glow marine (couleur secondaire du logo) */
+  .glow-accent {
+    box-shadow: 0 0 15px rgba(26, 39, 68, 0.6),
+      0 0 30px rgba(26, 39, 68, 0.3);
   }
-  /* Dégradé texte néon */
+  /* Dégradé texte rouge → rouge clair */
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #8B5CF6, #00E5FF);
+    background-image: linear-gradient(135deg, #E63946, #FF6B6B);
   }
   /* Bordure dégradée */
   .border-gradient {
@@ -47,7 +48,7 @@
     position: absolute;
     inset: -1px;
     border-radius: inherit;
-    background: linear-gradient(135deg, #8B5CF6, #00E5FF);
+    background: linear-gradient(135deg, #E63946, #FF6B6B);
     z-index: -1;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -58,10 +59,10 @@
   /* Effet de grille gaming */
   .bg-grid {
     background-image: linear-gradient(
-        rgba(139, 92, 246, 0.03) 1px,
+        rgba(230, 57, 70, 0.03) 1px,
         transparent 1px
       ),
-      linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+      linear-gradient(90deg, rgba(230, 57, 70, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
   }
 }
@@ -74,10 +75,10 @@
   @apply bg-dark;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-neon-purple/40 rounded-full;
+  @apply bg-primary/40 rounded-full;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-neon-purple/60;
+  @apply bg-primary/60;
 }
 
 /* Animations CSS pour le pulse du bouton WhatsApp */

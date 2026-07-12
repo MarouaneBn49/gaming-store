@@ -15,10 +15,14 @@ const config: Config = {
           200: "#1e1e2a",
           300: "#2a2a3a",
         },
-        neon: {
-          purple: "#8B5CF6",
-          cyan: "#00E5FF",
-          pink: "#FF0080",
+        primary: {
+          DEFAULT: "#E63946",
+          light: "#FF6B6B",
+          dark: "#C62828",
+        },
+        accent: {
+          DEFAULT: "#1A2744",
+          light: "#2A3F6E",
         },
       },
       fontFamily: {
@@ -32,8 +36,8 @@ const config: Config = {
       },
       keyframes: {
         glow: {
-          "0%": { boxShadow: "0 0 5px #8B5CF6, 0 0 10px #8B5CF6" },
-          "100%": { boxShadow: "0 0 20px #8B5CF6, 0 0 40px #00E5FF" },
+          "0%": { boxShadow: "0 0 5px #E63946, 0 0 10px #E63946" },
+          "100%": { boxShadow: "0 0 20px #E63946, 0 0 40px #FF6B6B" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0px)" },

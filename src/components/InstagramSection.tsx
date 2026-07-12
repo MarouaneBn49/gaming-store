@@ -54,7 +54,7 @@ export default function InstagramSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="text-neon-purple text-sm font-bold uppercase tracking-widest">
+          <span className="text-primary text-sm font-bold uppercase tracking-widest">
             Instagram
           </span>
           <h2 className="font-title text-3xl md:text-5xl font-black mt-3 mb-4">
@@ -97,7 +97,7 @@ export default function InstagramSection() {
                 loading="lazy"
               />
               {/* Overlay au survol */}
-              <div className="absolute inset-0 bg-neon-purple/0 group-hover:bg-neon-purple/40 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-all duration-300 flex items-center justify-center">
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
                   <Instagram size={24} className="mx-auto mb-1" />
                   <span className="text-xs font-bold">{post.likes} likes</span>

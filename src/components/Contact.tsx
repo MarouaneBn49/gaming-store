@@ -15,7 +15,7 @@ export default function Contact() {
       className="py-20 md:py-28 bg-dark relative overflow-hidden"
     >
       {/* Décorations */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-neon-purple/5 rounded-full blur-[150px]" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-[150px]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* En-tête */}
@@ -26,7 +26,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-neon-cyan text-sm font-bold uppercase tracking-widest">
+          <span className="text-primary-light text-sm font-bold uppercase tracking-widest">
             Contact
           </span>
           <h2 className="font-title text-3xl md:text-5xl font-black mt-3 mb-4">
@@ -61,20 +61,20 @@ export default function Contact() {
 
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-300">
-                <Phone size={20} className="text-neon-purple" />
+                <Phone size={20} className="text-primary" />
                 <a
                   href={`tel:${SITE_CONFIG.phone.replace(/\s/g, "")}`}
-                  className="hover:text-neon-purple transition-colors"
+                  className="hover:text-primary transition-colors"
                 >
                   {SITE_CONFIG.phone}
                 </a>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
-                <MapPin size={20} className="text-neon-cyan" />
+                <MapPin size={20} className="text-primary-light" />
                 <span>{SITE_CONFIG.address}</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
-                <Clock size={20} className="text-neon-purple" />
+                <Clock size={20} className="text-primary" />
                 <span>{SITE_CONFIG.hours}</span>
               </div>
             </div>
@@ -89,14 +89,14 @@ export default function Contact() {
           >
             <img
               src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop"
-              alt="Magasin Gamer Store Maroc à Tanger"
+              alt="Magasin Gamer store à Tanger"
               className="w-full h-64 md:h-80 object-cover"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
               <p className="font-title text-lg font-bold">
-                Gamer Store Maroc
+                Gamer store
               </p>
               <p className="text-gray-400 text-sm">{SITE_CONFIG.address}</p>
             </div>

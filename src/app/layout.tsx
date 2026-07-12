@@ -15,7 +15,7 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Gamer Store Maroc — PC Portables Gamer à Tanger",
+  title: "Gamer store — PC Portables Gamer à Tanger",
   description:
     "Votre destination gaming au Maroc. PC portables gamer Razer, ASUS ROG, Lenovo Legion, MSI, TUF. Livraison gratuite partout au Maroc. Paiement à la livraison.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "livraison gratuite Maroc",
   ],
   openGraph: {
-    title: "Gamer Store Maroc",
+    title: "Gamer store",
     description:
       "PC portables gamer haut de gamme — Livraison gratuite partout au Maroc",
     type: "website",

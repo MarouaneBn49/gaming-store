@@ -63,7 +63,7 @@ export default function Reviews() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-neon-cyan text-sm font-bold uppercase tracking-widest">
+          <span className="text-primary-light text-sm font-bold uppercase tracking-widest">
             Témoignages
           </span>
           <h2 className="font-title text-3xl md:text-5xl font-black mt-3 mb-4">
@@ -81,7 +81,7 @@ export default function Reviews() {
           <button
             onClick={prev}
             disabled={current === 0}
-            className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-neon-purple/50 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+            className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-primary/50 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
             aria-label="Précédent"
           >
             <ChevronLeft size={18} />
@@ -89,7 +89,7 @@ export default function Reviews() {
           <button
             onClick={next}
             disabled={current >= maxIndex}
-            className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-neon-purple/50 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+            className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-primary/50 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
             aria-label="Suivant"
           >
             <ChevronRight size={18} />
@@ -108,7 +108,7 @@ export default function Reviews() {
                 {/* Icône citation */}
                 <Quote
                   size={24}
-                  className="text-neon-purple/20 absolute top-4 right-4"
+                  className="text-primary/20 absolute top-4 right-4"
                 />
 
                 {/* Étoiles */}
@@ -136,7 +136,7 @@ export default function Reviews() {
                   <img
                     src={review.avatar}
                     alt={review.name}
-                    className="w-10 h-10 rounded-full object-cover border-2 border-neon-purple/30"
+                    className="w-10 h-10 rounded-full object-cover border-2 border-primary/30"
                     loading="lazy"
                   />
                   <div>
@@ -160,7 +160,7 @@ export default function Reviews() {
               }}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 i === current
-                  ? "bg-neon-purple w-6"
+                  ? "bg-primary w-6"
                   : "bg-gray-600 hover:bg-gray-500"
               }`}
               aria-label={`Page ${i + 1}`}

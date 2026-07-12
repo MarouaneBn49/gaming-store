@@ -18,11 +18,11 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative bg-dark-100 border border-white/5 rounded-2xl overflow-hidden hover:border-neon-purple/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(139,92,246,0.15)]"
+      className="group relative bg-dark-100 border border-white/5 rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(230,57,70,0.15)]"
     >
       {/* Badge optionnel */}
       {product.badge && (
-        <div className="absolute top-3 left-3 z-10 bg-neon-purple/90 text-white text-xs font-bold px-3 py-1 rounded-full">
+        <div className="absolute top-3 left-3 z-10 bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full">
           {product.badge}
         </div>
       )}
@@ -43,7 +43,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       <div className="p-5">
         {/* Marque et modèle */}
         <div className="flex items-center justify-between mb-3">
-          <span className="text-neon-cyan text-xs font-bold uppercase tracking-wider">
+          <span className="text-primary-light text-xs font-bold uppercase tracking-wider">
             {product.brand}
           </span>
           <span className="text-gray-500 text-xs">{product.screen}</span>
@@ -53,15 +53,15 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         {/* Specs */}
         <div className="space-y-1.5 mb-4">
           <div className="flex items-center gap-2 text-gray-400 text-xs">
-            <Cpu size={12} className="text-neon-purple" />
+            <Cpu size={12} className="text-primary" />
             <span>{product.cpu}</span>
           </div>
           <div className="flex items-center gap-2 text-gray-400 text-xs">
-            <Zap size={12} className="text-neon-cyan" />
+            <Zap size={12} className="text-primary-light" />
             <span>{product.gpu}</span>
           </div>
           <div className="flex items-center gap-2 text-gray-400 text-xs">
-            <HardDrive size={12} className="text-neon-purple" />
+            <HardDrive size={12} className="text-primary" />
             <span>
               {product.ram} — {product.storage}
             </span>
@@ -107,7 +107,7 @@ export default function Products() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-neon-cyan text-sm font-bold uppercase tracking-widest">
+          <span className="text-primary-light text-sm font-bold uppercase tracking-widest">
             Catalogue
           </span>
           <h2 className="font-title text-3xl md:text-5xl font-black mt-3 mb-4">

@@ -13,7 +13,7 @@ export const reviews: Review[] = [
     name: "Youssef B.",
     avatar: "https://i.pravatar.cc/100?img=11",
     rating: 5,
-    text: "PC reçu en 2 jours à Casablanca ! La qualité est au rendez-vous, le Razer Blade est une pure merveille. Merci Gamer Store Maroc !",
+    text: "PC reçu en 2 jours à Casablanca ! La qualité est au rendez-vous, le Razer Blade est une pure merveille. Merci Gamer store !",
     date: "Il y a 2 semaines",
   },
   {
